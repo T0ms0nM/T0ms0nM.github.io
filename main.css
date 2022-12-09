@@ -425,18 +425,21 @@ table {
     margin-left: 30%;
     }
     .info {
-        clear:both;
+      
      width: 98%;
     margin: 2%;
+    flex-direction:column;
       
     }
+
 .contact
 {
    clear:both;
+   width:auto;
 }
-    .kontakt{
-        clear:both;
-
+    .kontakt {
+        flex-direction: column;
+        width: 90%;
     }
 
     #gotowanie2 {
@@ -567,7 +570,6 @@ table {
     border-radius: 5px;
     background-color: #2F3336;
     padding: 10px;
-
   }
   
   .col-25 {
