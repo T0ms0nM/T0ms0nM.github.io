@@ -1,0 +1,601 @@
+body {
+    background-color: #2F3336;
+    color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    padding:0px;
+    margin:0px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #C0D06F;
+    margin: 20px;
+}
+
+#baner {
+    width: 100%;
+    max-height: 150px;
+    padding-top: 50px;
+}
+.responsive {
+    width: 100%;
+    max-height: 150px;
+    height:auto;
+
+
+}
+.responsivegotuje {
+    width: 70%;
+    height:auto;
+
+
+}
+#gotowanie1
+{
+    width: 50%;
+    float: right;
+    
+    
+
+
+}
+#gotowanie2
+{
+    width: 50%;
+    margin-left: 5%;
+
+
+}
+#conteiner
+{
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    
+    
+}
+
+/**/
+.pizzapic {
+    position: relative;
+    width: 100%;
+  }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .pizzapic:hover .obrazpizza {
+    opacity: 0.3;
+  }
+  
+  .pizzapic:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #ffb300;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 16px 32px;
+    width: auto;
+  }
+  /**/
+.obrazpizza
+{
+    width: 100%;
+    height:auto;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.obrazbudynek
+{
+    width: 700px;
+    height:auto;
+}
+
+.klasyczne {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #D50C0B;
+}
+
+.pitce {
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin:auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+    
+}
+.mapa {
+    margin-left:2%;
+    float: right;
+    margin-top: 5%;
+    width: 33%;
+    display: flex;
+
+
+}
+iframe {
+
+    height:100%;
+
+    width:100%;
+
+
+
+}
+
+.budynek
+{
+   float: left; 
+   max-width: 60%;
+   margin-right: 5%;
+   margin-left: 1%;
+}
+#wrapper
+{
+    width: 100%;
+    margin-top:30px;
+
+}
+#wstep
+{
+    display: flex;
+    float: right;
+    text-align: center;
+    width: 40%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.promozdj
+{
+    width: 100%;
+    height: auto;
+}
+.promocja
+{
+    width: 30%;
+    display: flex;
+    float: left;
+    margin:1.5%;
+    text-align: center;
+}
+#promo
+{
+    text-align: center;
+    width: 100;
+    margin: 2%;
+}
+.toggle-button .bar {
+    background-color:black;
+}
+header {
+    position: fixed;
+    background-color: darkorange;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 5px 5px;
+    z-index: 100000;
+}
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    
+    -webkit-text-stroke-width: 2px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    header ul li {
+        position: relative;
+        list-style: none;
+    }
+
+        header ul li a {
+            position: relative;
+            margin: 0px 15px;
+            text-decoration: none;
+            color: #000;
+            letter-spacing: 2px;
+            font-weight: 500;
+            transition: 0.6s;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+        }
+header.sticky {
+padding: 5px 5px;
+background: darkorange;
+}
+.toggle-button,
+header.sticky .logo,
+header.sticky ul li a {
+    color: rgb(0, 0, 0);
+}
+
+.sklad
+{
+    font-weight: 400;
+    font-size: small;
+    color: burlywood;
+}
+
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding: 2rem;
+}
+.heading {
+    text-align:center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.heading span{
+    color: black;
+    text-transform: uppercase;
+}
+
+.toggle-button {
+    position: absolute;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    margin-top: 10px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+@media (max-width: 950px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links{
+       display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+#pierwszy {
+    width: 100%;
+    height: auto;
+}
+
+
+#stopka {
+    position: relative;
+    width: 100%;
+    background-color: darkorange;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0%;
+}
+
+#stopka .social_icon,
+#stopka .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+#stopka .social_icon li, 
+#stopka .menu li{
+        list-style: none;
+}
+#stopka .social_icon li a{
+        font-size: 2em;
+        color: rgb(0, 0, 0);
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+#stopka .social_icon li a:hover {
+        transform: translateY(-10px);
+}
+#stopka .menu li a {
+        font-size: 1.2em;
+        color: rgb(0, 0, 0);
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+        text-decoration:none;
+        opacity: 0.75;
+}
+    #stopka .menu li a:hover {
+        opacity: 1;
+    }
+#stopka p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size:0.7em;
+}
+table {
+    border: none;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+ 
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: darkorange;
+  }
+  @media screen and (max-width: 900px)
+  {
+    #wrapper
+    {
+    width: 100%;
+    margin-top:30px;
+    display: grid;
+    }
+    #wstep
+    {
+    display: flex;
+    float: right;
+    text-align: center;
+    width: 40%;
+    margin-right: 3%;
+    margin-left: 30%;
+    }
+    .info {
+        clear:both;
+     width: 98%;
+    margin: 2%;
+      
+    }
+.contact
+{
+   clear:both;
+}
+    .kontakt{
+        clear:both;
+
+    }
+
+    #gotowanie2 {
+        clear: both;
+        width:90%;
+        margin:auto;
+       
+       
+    }
+    #gotowanie1 {
+        clear: both;
+        width: 90%;
+        margin: auto;
+    }
+    #conteiner {
+        display: block;
+       
+    }
+  }
+@media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    
+    table tr {
+      border-bottom: 3px solid darkorange;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: none;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+  }
+  #toTop {
+    padding: 5px 3px;
+    background: #fff;
+    color: #000;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    display: none;
+}
+#historia
+{
+    text-align: center;
+    margin-top: 10%;
+
+    
+}
+.kontakt
+{
+    background-color: darkorange;
+    max-width: 33%;
+    width: 33%;
+    float: left;;
+    padding: 1%;
+    margin-top: 5%;
+}
+.info
+{
+    width: 98%;
+    display: flex;
+    margin: 2%;
+}
+.dane
+{
+    margin: 3%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: darkorange;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  
+  .container {
+    border-radius: 5px;
+    background-color: #2F3336;
+    padding: 10px;
+
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 1450px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  .contact
+{
+    width: 100%;
+    display: flex;
+}

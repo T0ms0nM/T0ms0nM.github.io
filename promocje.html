@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pizzeria Al-Dente</title>
+    <meta name="description" content="Pizzeria Al-Dente">
+    <meta name="keywords" content="Pizza, Pizzeria, Opole">
+    <meta name="author" content="Tomasz MAlaka">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   
+
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Al-Dente</a>
+        <a class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="promocje.html">Promocje</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="koszyk.html">Koszyk</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div id="baner">
+        <img src="img/baner1.jpg" alt="baner" class="responsive">
+</div>
+<div id="promo">
+<div class="promocja">
+    <img src="img/promocja1.png" alt="promo" class="promozdj">
+
+</div>
+<div class="promocja">
+    <img src="img/promocja2.png" alt="promo" class="promozdj">
+</div>
+<div class="promocja">
+    <img src="img/promocja3.jpg" alt="promo" class="promozdj">
+</div>
+<div class="promocja">
+    <p>Zamów za 100 zł lub więcej i zgarnij15% rabatu. 
+        Tym razem to mniejszy głód? Nic straconego - na zamówienia poniżej 100 zł dajemy -10%.
+         Promocja ważna od poniedziałku do piątku.</p>
+</div>
+<div class="promocja">
+    <p>Pozwól nam zadbać o Twój budżet i okaż ważną legitymację szkolną lub studencką. 
+        Co powiesz na 10-15% rabatu? Smaczności! Promocja obowiązuje w wybranych lokalach. </p>
+</div>
+<div class="promocja">
+    <p>Ogromnie się cieszymy, że możemy honorować Kartę Dużej Rodziny. Przy zamówieniu okaż KDR i 
+        dokument potwierdzający tożsamość właściciela karty, 
+        a wyczarujemy dla Ciebie 15% zniżki.  </p>
+</div>
+
+
+</div>
+
+<footer>
+
+<div id="stopka">
+    <ul class="social_icon">
+        <li><a href="http://facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="http://twitter.com"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="http://instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="promocje.html">Promocje</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <p>®Pizzeria Al Al-Dente</p>
+</div>
+
+
+<script>
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+</script>
+<!--sticky, walidacja formularza, powrót do góry - js-->
+<!--rozwinięcie, usunięcie tekstu, zmiana obrazka -jquery -->
+</footer> 
+</body>
+</html>
